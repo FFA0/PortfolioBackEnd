@@ -9,7 +9,6 @@ com\portfolio\controller\PersonaController.class
 com\portfolio\service\ITipoEmpleoService.class
 com\portfolio\service\ITecnologiaService.class
 com\portfolio\service\ILocalidadService.class
-com\portfolio\WebConfig.class
 com\portfolio\repository\TipoEmpleoRepository.class
 com\portfolio\model\Experiencia.class
 com\portfolio\model\Localidad.class
