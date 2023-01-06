@@ -20,7 +20,7 @@ public class Tecnologia {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     @Basic
-    @Column(name = "nombre", nullable = false)
+    @Column(name = "nombreTec", nullable = false)
     private String nombre;
     @Column(name = "porcentaje", nullable = false)
     private int porcentaje;

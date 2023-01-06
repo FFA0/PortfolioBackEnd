@@ -23,9 +23,9 @@ public class Proyecto {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     @Basic
-    @Column(name = "nombre", nullable = false)
+    @Column(name = "nombrePro", nullable = false)
     private String nombre;
-    @Column(name = "descripcion", nullable = false)
+    @Column(name = "descripcionPro", nullable = false)
     private String descripcion;
     @Column(name = "fecha", nullable = false)
     @Temporal(TemporalType.DATE)

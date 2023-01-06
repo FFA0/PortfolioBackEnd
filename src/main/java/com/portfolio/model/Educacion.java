@@ -20,11 +20,11 @@ public class Educacion {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     @Basic
-    @Column(name = "nombre", nullable = false)
+    @Column(name = "nombreEdu", nullable = false)
     private String nombre;
-    @Column(name = "descripcion", nullable = false)
+    @Column(name = "descripcionEdu", nullable = false)
     private String descripcion;
-    @Column(name = "url")
+    @Column(name = "urlEdu")
     private String url;
     
     @ManyToOne

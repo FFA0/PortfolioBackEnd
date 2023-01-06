@@ -37,7 +37,7 @@ public class Experiencia {
     @Column(name = "fechaFinal", nullable = false)
     @Temporal(TemporalType.DATE)
     private Date fechaFinal;
-    @Column(name = "url")
+    @Column(name = "urlExp")
     private String urlFoto;
     
     @ManyToOne
