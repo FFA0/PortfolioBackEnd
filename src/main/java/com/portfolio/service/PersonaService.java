@@ -32,8 +32,9 @@ public class PersonaService implements IPersonaService{
        per.setApellido(pers.getApellido());
        per.setTitulo(pers.getTitulo());
        per.setAcerca(pers.getAcerca());
-       per.setUrlFoto(pers.getUrlFoto());
+       per.setUrlFoto(pers.getUrlFoto());       
        per.setLocalidad(pers.getLocalidad());
+       per.setUrlBanner(pers.getUrlBanner());       
        
        persRepo.save(per);
     }
@@ -59,6 +60,7 @@ public class PersonaService implements IPersonaService{
                                          per.getTitulo(), 
                                          per.getAcerca(), 
                                          per.getUrlFoto(),
+                                         per.getUrlBanner(),
                                          per.getListaEducacion(),
                                          per.getListaExperiencia(),
                                          per.getListaProyecto(),

@@ -54,7 +54,7 @@ public class Persona {
     
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "persona")
     @JsonManagedReference
-    private List<Tecnologia> listaTecnologia;
+    private List<Habilidad> listaTecnologia;
     
     @ManyToOne
     private Localidad localidad;
@@ -68,7 +68,7 @@ public class Persona {
                     List<Educacion> listaEducacion, 
                     List<Experiencia> listaExperiencia, 
                     List<Proyecto> listaProyecto, 
-                    List<Tecnologia> listaTecnologia, Localidad localidad) {
+                    List<Habilidad> listaTecnologia, Localidad localidad) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;

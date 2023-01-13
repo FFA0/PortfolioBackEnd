@@ -29,7 +29,9 @@ public class ProyectoService implements IProyectoService{
         
         p.setNombre(pro.getNombre());
         p.setDescripcion(pro.getDescripcion());
-        p.setFecha(pro.getFecha());
+        p.setFechaInicio(pro.getFechaInicio());
+        p.setFechaFinal(pro.getFechaFinal());
+        p.setUrlProyecto(pro.getUrlProyecto());
         
         proRepo.save(p);
     }

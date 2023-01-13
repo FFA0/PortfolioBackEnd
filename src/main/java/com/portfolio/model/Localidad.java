@@ -19,7 +19,7 @@ public class Localidad {
     private Long id;
     @Basic
     @Column(name = "Localidad")
-    private String Localidad;
+    private String Localidad;   
     
     public Localidad() {
     }   

@@ -5,7 +5,7 @@ import com.portfolio.model.Educacion;
 import com.portfolio.model.Experiencia;
 import com.portfolio.model.Localidad;
 import com.portfolio.model.Proyecto;
-import com.portfolio.model.Tecnologia;
+import com.portfolio.model.Habilidad;
 import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,33 +20,33 @@ public class PersonaDto {
     private String titulo;
     private String acerca;
     private String urlFoto;
+    private String urlBanner;
     private List<Educacion> listaEducacion;
     private List<Experiencia> listaExperiencia;
     private List<Proyecto> listaProyecto;
-    private List<Tecnologia> listaTecnologia;
+    private List<Habilidad> listaHabilidad;
     private Localidad localidad;
 
     public PersonaDto() {
-    }
-    
+    }    
+
     public PersonaDto(Long id, String nombre, String apellido, String titulo, 
-                      String acerca, String urlFoto, 
+                      String acerca, String urlFoto, String urlBanner, 
                       List<Educacion> listaEducacion, 
                       List<Experiencia> listaExperiencia, 
                       List<Proyecto> listaProyecto, 
-                      List<Tecnologia> listaTecnologia, Localidad localidad) {
+                      List<Habilidad> listaHabilidad, Localidad localidad) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.titulo = titulo;
         this.acerca = acerca;
         this.urlFoto = urlFoto;
+        this.urlBanner = urlBanner;
         this.listaEducacion = listaEducacion;
         this.listaExperiencia = listaExperiencia;
         this.listaProyecto = listaProyecto;
-        this.listaTecnologia = listaTecnologia;
+        this.listaHabilidad = listaHabilidad;
         this.localidad = localidad;
     }
-
-    
 }

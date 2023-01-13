@@ -27,23 +27,28 @@ public class Proyecto {
     private String nombre;
     @Column(name = "descripcionPro", nullable = false)
     private String descripcion;
-    @Column(name = "fecha", nullable = false)
+    @Column(name = "fechaInicio", nullable = false)
     @Temporal(TemporalType.DATE)
-    private Date fecha;
+    private Date fechaInicio;
+    @Column(name = "fechaFinal", nullable = false)
+    @Temporal(TemporalType.DATE)
+    private Date fechaFinal;
+    @Column(name = "urlProyecto")
+    private String urlProyecto;
+    
     
     @ManyToOne
     @JsonBackReference
     private Persona persona;
 
     public Proyecto() {
-    }   
+    }
 
-    public Proyecto(Long id, String nombre, String descripcion, Date fecha, 
-                    Persona persona) {
+    public Proyecto(Long id, String nombre, String descripcion, Date fechaInicio, Date fechaFinal, Persona persona) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.fecha = fecha;
-        this.persona = persona;
+        this.fechaInicio = fechaInicio;
+        this.fechaFinal = fechaFinal;
     }
 }
