@@ -44,7 +44,8 @@ public class Proyecto {
     public Proyecto() {
     }
 
-    public Proyecto(Long id, String nombre, String descripcion, Date fechaInicio, Date fechaFinal, Persona persona) {
+    public Proyecto(Long id, String nombre, String descripcion, Date fechaInicio, 
+                    Date fechaFinal, Persona persona) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
