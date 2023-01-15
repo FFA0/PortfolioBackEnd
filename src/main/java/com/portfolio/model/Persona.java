@@ -54,13 +54,13 @@ public class Persona {
     
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "persona")
     @JsonManagedReference
-    private List<Habilidad> listaTecnologia;
+    private List<Habilidad> listaHabilidad;
     
     @ManyToOne
     private Localidad localidad;
     
     public Persona() {
-    }
+    }   
 
     public Persona(Long id, String nombre, String apellido, String titulo, 
                     String acerca, String urlFoto, String urlBanner, 
@@ -68,7 +68,7 @@ public class Persona {
                     List<Educacion> listaEducacion, 
                     List<Experiencia> listaExperiencia, 
                     List<Proyecto> listaProyecto, 
-                    List<Habilidad> listaTecnologia, Localidad localidad) {
+                    List<Habilidad> listaHabilidad, Localidad localidad) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -81,9 +81,7 @@ public class Persona {
         this.listaEducacion = listaEducacion;
         this.listaExperiencia = listaExperiencia;
         this.listaProyecto = listaProyecto;
-        this.listaTecnologia = listaTecnologia;
+        this.listaHabilidad = listaHabilidad;
         this.localidad = localidad;
     }
-
-    
 }

@@ -64,7 +64,7 @@ public class PersonaService implements IPersonaService{
                                          per.getListaEducacion(),
                                          per.getListaExperiencia(),
                                          per.getListaProyecto(),
-                                         per.getListaTecnologia(),
+                                         per.getListaHabilidad(),
                                          per.getLocalidad()
                                     );
         
